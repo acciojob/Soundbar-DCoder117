@@ -1,1 +1,53 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #193549;
+    font-family: Arial, sans-serif;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.btn,
+.stop {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #1e90ff;
+}
+
+.stop {
+    background: #e63946;
+}
+
+.btn:hover,
+.stop:hover {
+    transform: scale(1.05);
+}
+
+.btn:active,
+.stop:active {
+    transform: scale(0.95);
+}
